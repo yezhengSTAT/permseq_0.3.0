@@ -93,7 +93,10 @@ processor/core and all threads find alignments in paralle. Default value is 8.}
 
 \item{csemDir}{Directory where CSEM was installed.}
 
-\item{picardDir}{Directory where PICARD jar file is saved.}
+\item{picardDir}{Directory where PICARD jar file is saved. For
+  incorporating multi-mapping reads, we do not recommend using picard to
+  remove duplicates. You can leave this option empty so that samtools
+  will be adopted to remove PCR duplicates. }
 
 \item{chrom.ref}{reference genome index summary information. First line
   is the number of chromosomes in the index, either bwaIndex or

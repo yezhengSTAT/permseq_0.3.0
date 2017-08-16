@@ -105,7 +105,10 @@ Or if no prior is built and allocate ChIP-seq by CSEM directly, a new
 \item{bwaInfo}{List of BWA realted information: bwaDir, bwaIndex, nBWA,
   oBWA, tBWA, mBWA.}
 \item{csemDir}{Directory where CSEM was installed.}
-\item{picardDir}{Directory where PICARD jar file is saved.}
+\item{picardDir}{Directory where PICARD jar file is saved. For
+  incorporating multi-mapping reads, we do not recommend using picard to
+  remove duplicates. You can leave this option empty so that samtools
+  will be adopted to remove PCR duplicates. }
 \item{outfileLoc}{Directory to store output files.}
 
 
